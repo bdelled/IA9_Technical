@@ -27,13 +27,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/penBlack"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/pencil" />
-
-            <ImageView
                 android:id="@+id/penYellow"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -47,7 +40,7 @@
                 android:layout_height="50dp"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/pencil"
-                app:backgroundTint="#ffff00" />
+                app:backgroundTint="#0000ff" />
 
             <ImageView
                 android:id="@+id/penRed"
@@ -57,7 +50,28 @@
                 android:background="@drawable/pencil"
                 app:backgroundTint="#ff0000" />
 
+            <ImageView
+                android:id="@+id/penGreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil"
+                app:backgroundTint="#008000" />
 
+            <ImageView
+                android:id="@+id/penPurple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil"
+                app:backgroundTint="#800080" />
+
+            <ImageView
+                android:id="@+id/penBlack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil" />
 
         </FrameLayout>
 
@@ -68,9 +82,9 @@
             android:layout_margin="10dp"/>
 
         <TextView
+            android:id="@+id/sizeDisplay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10px"
             android:textSize="25dp" />
 
         <Button
@@ -78,8 +92,8 @@
             android:layout_width="62dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="20dp"
-
-            app:backgroundTint="#000000" />
+            android:background="@drawable/undo"
+            android:backgroundTint="#000000" />
 
     </LinearLayout>
 
