@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Drawing View-->
+    <com.example.ia8technicali.DoodleView
+        android:id="@+id/DoodleView"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_alignParentTop="true"/>
+
+
+        <!--Pen Size Selector-->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scrollview"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="10dp"
+        android:background="@drawable/toolbar_background">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/penBlack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil" />
+
+            <ImageView
+                android:id="@+id/penYellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil"
+                app:backgroundTint="#ffff00" />
+
+            <ImageView
+                android:id="@+id/penBlue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil"
+                app:backgroundTint="#ffff00" />
+
+            <ImageView
+                android:id="@+id/penRed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/pencil"
+                app:backgroundTint="#ff0000" />
+
+
+
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/sizeSelectors"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10px"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/eraser"
+            android:layout_width="62dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+
+            app:backgroundTint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <!--Color Selector-->
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/black_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#000000"/>
+
+            <Button
+                android:id="@+id/yellow_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#ffff00" />
+
+            <Button
+                android:id="@+id/blue_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#0000ff" />
+
+            <Button
+                android:id="@+id/red_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#ff0000" />
+
+            <Button
+                android:id="@+id/green_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#008000"/>
+
+            <Button
+                android:id="@+id/purple_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_design"
+                app:backgroundTint="#800080"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
